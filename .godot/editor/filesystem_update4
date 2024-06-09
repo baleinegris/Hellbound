@@ -1,0 +1,13 @@
+res://Scenes/game.tscn
+res://Scenes/encounter.tscn
+res://Scenes/hero.tscn
+res://Scenes/creature.tscn
+res://Scenes/HealthBar.tscn
+res://Scripts/Creature.gd
+res://Scripts/HealthBar.gd
+res://Scripts/game.gd
+res://Scenes/TestBody.tscn
+res://Scripts/TestBody.gd
+res://Scenes/newCreature.tscn
+res://Scripts/Hero.gd
+res://Scenes/newCreature.gd
