@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://cq372p5reu7ke"]
+
+[ext_resource type="Script" path="res://Scripts/Character.gd" id="1_m0o3v"]
+[ext_resource type="Texture2D" uid="uid://ghry4vxuj4me" path="res://Assets/Sprites/Knight.png" id="2_yvqbl"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_iuqlc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_yvqbl")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Character" type="Node2D"]
+script = ExtResource("1_m0o3v")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-17, -308)
+sprite_frames = SubResource("SpriteFrames_iuqlc")

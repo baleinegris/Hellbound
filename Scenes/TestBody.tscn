@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://de1md5wrka2sl"]
+
+[ext_resource type="Script" path="res://Scripts/TestBody.gd" id="1_20hil"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i2bqa"]
+size = Vector2(200, 109.5)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+input_pickable = true
+script = ExtResource("1_20hil")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, -16)
+shape = SubResource("RectangleShape2D_i2bqa")
+debug_color = Color(3.27289e-06, 0.562537, 0.877016, 0.42)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+
+[node name="Label" type="Label" parent="."]
+offset_left = -35.0
+offset_top = -31.0
+offset_right = 31.0
+offset_bottom = -8.0
+text = "Selected"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[connection signal="mouse_shape_entered" from="." to="." method="_on_mouse_shape_entered"]
+[connection signal="mouse_shape_exited" from="." to="." method="_on_mouse_shape_exited"]
